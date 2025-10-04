@@ -1,0 +1,35 @@
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Jupyter
+.ipynb_checkpoints/
+*.nbconvert.ipynb
+
+# Environments & OS
+.env
+.venv/
+*.env
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Data (keep the folder; ignore files)
+data/*
+!data/.gitkeep
+!data/README.md
+
+# Logs & artifacts
+logs/
+artifacts/
+mlruns/
+*.log
+
+# Cache
+.cache/
+*.cache
