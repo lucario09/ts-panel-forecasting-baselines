@@ -1,5 +1,15 @@
 # Panel Time-Series Forecasting — Sales (Notebooks)
-
+[![Python](https://img.shields.io/badge/python-3.9%2B-blue.svg)](https://www.python.org/)
+[![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange.svg)]()
+[![scikit-learn](https://img.shields.io/badge/scikit--learn-1.x-green.svg)](https://scikit-learn.org/stable/)
+[![statsmodels](https://img.shields.io/badge/statsmodels-0.14+-lightgrey.svg)](https://www.statsmodels.org/)
+[![ARIMA/SARIMAX](https://img.shields.io/badge/ARIMA-SARIMAX-blueviolet.svg)]()
+[![TBATS](https://img.shields.io/badge/TBATS-forecasting-yellow.svg)]()
+[![Prophet](https://img.shields.io/badge/Facebook-Prophet-0066cc.svg)](https://facebook.github.io/prophet/)
+[![AutoTS](https://img.shields.io/badge/AutoTS-0.6+-ff69b4.svg)](https://winedarksea.github.io/AutoTS/)
+[![Darts](https://img.shields.io/badge/Darts-0.25+-red.svg)](https://unit8co.github.io/darts/)
+[![Optuna](https://img.shields.io/badge/Optuna-hyperopt-9cf.svg)](https://optuna.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 A portfolio-ready set of Jupyter notebooks for **panel time-series forecasting** (daily sales across multiple stores × items).  
 The project emphasizes **clean validation** (holdout + rolling-origin backtest), interpretable **statistical baselines** (SARIMAX, TBATS, ARIMA), and practical **automation** (AutoTS), with optional Prophet / Darts / NeuralProphet experiments.
 
